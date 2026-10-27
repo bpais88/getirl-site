@@ -1,26 +1,145 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>getIRL support</title>
-<meta name="description" content="Help and contact for getIRL, the iPhone app that blocks chosen apps for focus and sleep.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>getIRL · focus and sleep app blocker</title>
+<meta name="description" content="getIRL blocks the apps that pull you in, at work and at night. Getting back to them takes a few minutes, not willpower. Free for iPhone. Nothing leaves your phone.">
+<meta property="og:title" content="getIRL · a little distance from your phone">
+<meta property="og:description" content="Block the apps that pull you in, at work and at night. Unlocking takes a short wait, so you choose it on purpose.">
+<meta property="og:image" content="https://bpais88.github.io/getirl-site/img/home-blocking.webp">
+<meta name="theme-color" content="#E9E3D7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="style.css">
 </head>
-<body><main>
-<span class="needle" aria-hidden="true"></span>
-<h1>getIRL</h1>
-<p>Block the apps that pull you in, for focus at work and for sleep. Unblocking takes a short, deliberate wait.</p>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="./" aria-label="getIRL home">
+      <svg viewBox="0 0 22 22" aria-hidden="true"><rect x="0" y="20.5" width="22" height="1.2" fill="currentColor"/><rect x="2" y="14" width="1.2" height="7" fill="currentColor"/><rect x="10.4" y="14" width="1.2" height="7" fill="currentColor"/><rect x="19" y="14" width="1.2" height="7" fill="currentColor"/><rect x="13" y="0" width="3" height="22" rx="1.5" fill="var(--needle)"/></svg>
+      getIRL
+    </a>
+    <nav><a href="#how">How it works</a><a href="#privacy">Privacy</a><a href="#help">Help</a></nav>
+  </header>
 
-<h2>Contact</h2>
-<p>Questions, problems or ideas: <a href="mailto:bruno.pais88@gmail.com?subject=getIRL">bruno.pais88@gmail.com</a>. I read every message.</p>
+  <div class="hero">
+    <div>
+      <h1>A little distance from your phone.</h1>
+      <p class="lede">getIRL blocks the apps that pull you in, at work and at night. Getting back to them takes a few minutes, not willpower.</p>
+      <a class="cta" href="https://apps.apple.com/app/id6826855910">Get getIRL on the App Store</a>
+      <p class="fine">Free · iPhone · iOS 17 or later · No account</p>
+    </div>
+    <div class="phone"><img src="img/home-blocking.webp" width="603" height="1311" alt="getIRL Home: Focus is on, five apps blocked until 17:30, shown on a printed scale of the day."></div>
+  </div>
 
-<h2>Common questions</h2>
-<p><strong>An app is still blocked after I removed it from a profile.</strong> Open getIRL once; it repairs blocks each time it opens. If it is still blocked, go to iPhone Settings → Screen Time, switch getIRL's access off and on again.</p>
-<p><strong>Blocks don't start.</strong> getIRL needs Screen Time access. Open the app; it asks for access if it is off.</p>
-<p><strong>I didn't see the unlock notification.</strong> Notifications can be silenced by a Focus mode. Open getIRL within 10 minutes of tapping "Ask to unlock" and the countdown opens by itself.</p>
-<p><strong>Can getIRL be switched off?</strong> Yes. You stay in charge: Screen Time access can be turned off in Settings with Face ID or your passcode. getIRL notes it in History, without judgement.</p>
+  <figure class="scale" aria-label="A day on the scale: Sleep from midnight to 07:00, Focus from 09:00 to 17:30, Sleep again from 23:00.">
+    <svg viewBox="0 0 1000 86" role="img" aria-hidden="true">
+      <g fill="currentColor" font-size="13" font-family="-apple-system, BlinkMacSystemFont, sans-serif" text-anchor="middle">
+        <text x="8" y="14">00</text><text x="254" y="14">06</text><text x="500" y="14">12</text><text x="746" y="14">18</text><text x="992" y="14">24</text>
+      </g>
+      <rect x="8" y="40" width="984" height="1" fill="currentColor" opacity=".85"/>
+      <g fill="currentColor">
+        <rect x="7.5" y="24" width="1" height="17"/><rect x="253.5" y="24" width="1" height="17"/><rect x="499.5" y="24" width="1" height="17"/><rect x="745.5" y="24" width="1" height="17"/><rect x="991.5" y="24" width="1" height="17"/>
+      </g>
+      <g fill="currentColor" opacity=".55" id="minor"></g>
+      <rect x="8" y="58" width="287" height="9" fill="currentColor"/>
+      <rect x="377" y="58" width="348" height="9" fill="currentColor" opacity=".25"/>
+      <rect x="951" y="58" width="41" height="9" fill="currentColor"/>
+      <g fill="currentColor" font-size="12" font-family="-apple-system, BlinkMacSystemFont, sans-serif" opacity=".75">
+        <text x="8" y="83">Sleep</text><text x="377" y="83">Focus</text>
+      </g>
+      <rect x="555" y="18" width="3" height="54" rx="1.5" fill="var(--needle)"/>
+    </svg>
+    <figcaption>Every screen in getIRL reads time off one printed scale with one needle, like the dial of an old radio.</figcaption>
+  </figure>
+</div>
 
-<nav><a href="privacy.html">Privacy policy</a></nav>
-<footer>getIRL · made by Bruno Pais</footer>
-</main></body>
+<section id="how">
+  <div class="wrap">
+    <h2>Friction, not punishment.</h2>
+    <p class="intro">Blocking is easy. What getIRL changes is the way back: a short wait you have to sit with, so opening the app is a choice instead of a reflex.</p>
+    <div class="steps">
+      <div class="step"><span class="tick"></span><h3>Choose what to block</h3><p>Apps, categories and websites, picked from Apple's own list. Make a profile for focus, sleep, deep work or family time.</p></div>
+      <div class="step"><span class="tick"></span><h3>Blocks start on their own</h3><p>On a schedule, like every night 23:00–07:00, or for an hour right now. They hold even when the app is closed.</p></div>
+      <div class="step"><span class="tick"></span><h3>Unlocking takes a few minutes</h3><p>Wait out a short countdown and apps open for 10 minutes, then the block comes back by itself. A few emergency unlocks each week skip the wait.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split flip">
+    <div>
+      <h2>The wait is the point.</h2>
+      <p class="intro">Ask to unlock from the block screen and getIRL opens a calm countdown. Stay with it and the apps open. Leave, and it starts again. Most of the time, you'll find you didn't need them.</p>
+    </div>
+    <div class="phone"><img src="img/countdown-day.webp" width="603" height="1311" loading="lazy" alt="The countdown: about 12 minutes left, read off a printed scale, with a Never mind button."></div>
+  </div>
+</section>
+
+<section class="night">
+  <div class="wrap split">
+    <div>
+      <h2>Night is its own place.</h2>
+      <p class="intro">When Sleep is on, getIRL goes dark and still: warm grey on charcoal, nothing ticking, nothing to watch. Just a quiet reminder that it's late, and that the apps will still be there in the morning.</p>
+    </div>
+    <div class="phone"><img src="img/home-night.webp" width="603" height="1311" loading="lazy" alt="getIRL at night: Sleep is on until 07:00, rest well, in dark warm tones."></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split flip">
+    <div>
+      <h2>See the hours you got back.</h2>
+      <p class="intro">History shows the week on the same printed scale, the hours each profile protected, and a quiet note at 08:00 about the day before. No streaks, no guilt.</p>
+    </div>
+    <div class="phone"><img src="img/history.webp" width="603" height="1311" loading="lazy" alt="History: hours protected this week, a timetable of blocked hours per day, and totals by profile."></div>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <h2>Nothing leaves your iPhone.</h2>
+    <p class="intro">There's no account, no server, no ads and no analytics. getIRL uses Apple's Screen Time, which never even tells it which apps you picked.</p>
+    <ul class="plain">
+      <li>Your profiles, schedules and history live only on your phone, and go when you delete the app.</li>
+      <li>You stay in charge: Screen Time access can be switched off in Settings at any time, and every block lifts.</li>
+      <li>getIRL is a commitment tool, not a lock. It doesn't pretend it can't be bypassed.</li>
+    </ul>
+    <p class="fine"><a href="privacy.html">Read the privacy policy</a></p>
+  </div>
+</section>
+
+<section id="help" class="faq">
+  <div class="wrap">
+    <h2>Help</h2>
+    <h3>An app is still blocked after I removed it from a profile.</h3>
+    <p>Open getIRL once; it repairs blocks each time it opens. If it is still blocked, go to iPhone Settings → Screen Time, switch getIRL's access off and on again.</p>
+    <h3>Blocks don't start.</h3>
+    <p>getIRL needs Screen Time access. Open the app; it asks for access if it is off.</p>
+    <h3>I didn't see the unlock notification.</h3>
+    <p>Notifications can be silenced by a Focus mode. Open getIRL within 10 minutes of tapping "Ask to unlock" and the countdown opens by itself.</p>
+    <h3>Can getIRL be switched off?</h3>
+    <p>Yes. Screen Time access can be turned off in Settings with Face ID or your passcode. getIRL notes it in History, without judgement.</p>
+    <h3>Contact</h3>
+    <p>Questions, problems or ideas: <a href="mailto:bruno.pais88@gmail.com?subject=getIRL">bruno.pais88@gmail.com</a>. I read every message.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="privacy.html">Privacy</a><a href="mailto:bruno.pais88@gmail.com?subject=getIRL">Contact</a>
+    <span>getIRL · made by Bruno Pais</span>
+  </div>
+</footer>
+<script>
+  // Minute ticks on the day scale, generated to keep the markup short.
+  (function () {
+    var g = document.getElementById('minor'); if (!g) return;
+    for (var h = 1; h < 24; h++) { if (h % 6 === 0) continue;
+      var r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      r.setAttribute('x', (8 + h * 41) - .5); r.setAttribute('y', 32); r.setAttribute('width', 1); r.setAttribute('height', 9);
+      g.appendChild(r); }
+  })();
+</script>
+</body>
 </html>
